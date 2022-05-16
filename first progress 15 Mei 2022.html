@@ -1,0 +1,52 @@
+From Programmer Zaman Now we can conclude that there are 14 points of http :
+
+1. Http is stand for Hypertext transfer Protocol and the function of http is to transmission (it means to move some file from the one place to another place)
+the files are image, document, audio or video
+2. Http have 2 versions, the first is 1.1 and http2 but its oke if the web browser can't accep http2 because http can automatically change to the basic version
+3. Http terminology :
+    TCP : Transmission control Protocol is a computer network protocol that usually can use for web, email,opera etc
+    IP : Internet Protocol. every computer has this IP and it used for computer identity in network. if you wanna check your IP address, you can go to https://whatismyipaddress.com
+    URL : Uniform Resource Locator. URL is an address for web Resource
+    DNS : Domain Name Sever. actually DNS has a relation with IP, DNS used for giving name by user to the IP address to easy to remember
+    binary : some date without text like a video or audio, because binary can send faster than text
+    Web Server : Is an application that running on internet network and to be a Server
+4. Http Flow : if web browser as a client request to web server ( because wes server has a data that can be asked to web browser) then wes server will give the response
+the requirement is web server and web client must have a same network internet
+5. Browser Network Tools: there is function to see behind the process of http flow you can go to browser klik right cursor and press button inpect then look for network tools to see whats happened in a browser when you do something like refresh add something or etc
+6. http request and http response, or we can use http message. there a standardize to make a http messsage 
+ex : POST / login HTTP/1.1 ( as a start line)
+7. HTTP Method. there are much methods on Http. most command methods are :
+    Get : For request date to server ( only use for accepting date not for sending)
+    head : for request date without body
+    post : for sending a new date to server with the body such as video, image, audio etc 
+    put : for replacing all date that has been posted before
+    delete : for deleted date
+    patch : for replace a half of date
+    options : to describe available option in a server
+    trace : for debugging (to see detailing or tracing a problem) tracing will give feedback from client. when the application is ready, it forbiddens to activated this method
+8. URL : have 3 parts like http:// www.prgrammerzamannow.com/path/to/my/file.html?key1=value1&value2value2=value2#somewhereIntheDocument http is schema to show what protocol which used by client http or https (Hypertext trasnfer protocol security) it will be automatic added by web 
+    www.prgrammerzamannow.com:80 : authority have 2 parts
+    www.prgrammerzamannow.com : DNS
+    80 : is a port. usually automatic fulfill by web browser. default browser https use port 443 than http is 80 
+    path/to/my/file.html : path to resource for detailing resource but not must
+    ?key1=value1&value2=value2 : parameter. parameter use to add infromation value not must. if there are 2 or more parameters you can add &
+    #somewhereIntheDocument : anchor. representation from bookmark on html. usually use to web browser which is have much information and if we use anchor we can directly go to there without scroll
+9. Http header : added information which is not change the body and it contain in request and response. most commond in header http
+    host : is a must because it is an authority of the Browser
+    content-type : date type in the body
+    user agent : what browser and operation system
+    accept : client type data 
+    authorization : fill it with username and password for authentication
+more information reach oon wikipedia : list of http header fields
+10. http status : code of http response (only on http server) to know how the result about request from client
+    informational response (100-199/1xx-199) 
+    succesfull response (200-299)
+    redirect (3xx-399)
+    client error (4xx-499)
+    server error (5xx-599)
+further information goes here https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+11. http body : sending date from clients to server or vice versa. on header there must be a content type and there must be the same as the body 
+12. to force redirect client to the new pages must have header location.
+13. http cookie : http is designed stateless or independent. http didn't know about something to do or before to do. so by http cookie. http can know about authentication to introduce. and it will be continuing if the client has been login to the server. set cookie is a header on http if the client was login. cooke has a standardized and it can use one or more cookie
+you can add like expred cookie or etc and further attribute about cookie goes here https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
+14. http caching is storage in web browser client until the time that engaged so if the client asked request again. the client dont need to ask the server again
